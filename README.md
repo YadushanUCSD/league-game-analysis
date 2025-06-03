@@ -25,3 +25,29 @@ The dataset contains a very extensive array of data to analyze, but for the purp
 
 ## Data Cleaning and Exploratory Data Analysis:
 ### Data Cleaning:
+The first step of the data cleaning process is to drop all of the data regarding individual players. For the purposes of this project is to analyze team performance, not individual. This data set has rows for players followed by rows of data from teams, so we will only keep this team data. Then, not all rows are complete and this is shown by the datacompleteness column which tells if the row is complete or not. All rows that are not complete are droppped. 
+
+### Univariate Analysis:
+The graph below shows the distribution of monster kills for teams that won.
+
+The graph below shows the distribution of monster kills for teams that lost.
+
+When overlaying these graphs over one another we can see that teams that won did tend to have more monster kills on average than teams that lost.
+
+### Bivariate Analysis:
+I graphed the percentage of teams that had more monster kills than the other by whether they won or lost. This graph shows that teams that had more monster kills definitely won more often than they lost. This seems to support the fact that monster kills have a positive relationship with win rates. 
+
+### Interesting Aggregates:
+When grouping by the result, we can find some very interesting aggregates. This shows that teams that won had more monster kills, more minion kills, more kills, more assists, more gold accumulated, and less deaths.
+
+## Assessment of Missingness:
+
+## Hypothesis Testing:
+In this hypothesis test, I will determine if there is a significant difference for monster kills and winning games.
+
+Null: There is no association between the number of monster kills and the number of wins.
+Alternate: There is a positive association between the number of monster kills and the number of wins.
+Test Statistic:
+Significance Level: 5%
+
+To do this I used Logisitic Regression
