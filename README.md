@@ -50,4 +50,25 @@ Alternate: There is a positive association between the number of monster kills a
 Test Statistic:
 Significance Level: 5%
 
-To do this I used Logisitic Regression
+To do this I used Logisitic Regression since this is a binary classification task. 
+
+According to the model, the resulting coefficient and intercept are: Coefficient: 0.009717630776798814 and Intercept: -1.8503285496480981
+
+This means the model predicts that for every additional monster kill, the likelihood of winning increases be roughyly 0.0097. 
+
+Using this we can find a p-value. The resulting P-value is incredibly small so we can reject the null hypothesis and say that more monster kills most likely do impact the chance of winning the game.
+
+## Framing a Prediction Problem
+Now that I know a correlation between monster kills and the result of the game is likely, I want to see if I can predict the result of the game based on this information. To do this I will employ machine learning techniques to train a model and see how well it can predict the outcome of games based on monster kills and gold accumulated. Gold accumulated is closely linked with monster kills because killing monsters rewards players with extra resources like gold. A standard scaler will be applied to the totalgold and monsterkills columns in order to transform them. The data will then be split into an 80/20 split with training and test in order to help mitigate overfitting.
+
+## Baseline Model
+The resulting baseline model is able to predict the outcome of the game with 70.5% accuracy with the given variables. It does seem to do a slightly better job of predicting wins than losses as seen by the 73% recall rate for wins and 68% recall rate for losses. However, it doesn't seem to show any significant bias.
+
+## Final Model
+In order to improve the accuracy of the previous model, I decided to incorporate some additional variables. I previously discovered that teams that had more monster kills also tended to have more kills, more assists, and less deaths, so I have decided to add those to my model to see if that could lead to improved accuracy in the model.
+
+The resulting model has an accuracy of 96% which is a significant improvement over the baseline model. The recall rates for both winning and losing are now roughly the same. Ultimately, this means that the model is very good at predicting the result of a game based on the given data.
+
+## Fairness Analysis
+
+## Conclusion
