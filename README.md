@@ -41,7 +41,11 @@ I graphed the percentage of teams that had more monster kills than the other by 
 When grouping by the result, we can find some very interesting aggregates. This shows that teams that won had more monster kills, more minion kills, more kills, more assists, more gold accumulated, and less deaths.
 
 ## Assessment of Missingness:
+### NMAR Analysis
+When looking at the data it appears that soeme of the incomplete data have missing values for some of the kill streaks, such as double kills, triple kills, etc. I don't believe that these are NMAR (not missing at random) because at the highest level of play, it might be hard to defeat multiple top players in a row, which is why kill streaks become a difficult task. As such, these values may be missing because its likely that they may never happen in a game at the competitive level. Since, the missingness of the data depends on itself, it makes sense that this would be NMAR. In order to make it MAR (missing at random), some additional data may be needed. For example, a column that states if any killstreaks occured during the game may result in the missingness of this killstreak data dependent on whether or not the anykillstreaks column is true or false.
 
+### Missingness Dependency
+When looking at the 
 
 ## Hypothesis Testing:
 In this hypothesis test, I will determine if there is a significant difference for monster kills and winning games.
