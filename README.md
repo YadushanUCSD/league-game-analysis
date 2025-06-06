@@ -30,6 +30,13 @@ The first step of the data cleaning process is to drop all of the data regarding
 ### Univariate Analysis:
 The graph below shows the distribution of monster kills for teams that won.
 
+<iframe
+  src="assets/univariate_win_only.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+
 The graph below shows the distribution of monster kills for teams that lost.
 
 When overlaying these graphs over one another we can see that teams that won did tend to have more monster kills on average than teams that lost.
