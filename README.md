@@ -75,6 +75,20 @@ When looking at the data it appears that soeme of the incomplete data have missi
 ### Missingness Dependency
 When looking at the 
 
+<iframe
+  src="assets/missingness_firstblood.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+
+<iframe
+  src="assets/missingness_bans.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+
 ## Hypothesis Testing:
 In this hypothesis test, I will determine if there is a significant difference for monster kills and winning games.
 
@@ -111,5 +125,19 @@ Null hypothesis: My model is fair and its accuracy for short games is the same a
 Alternative hypothesis: Our model is unfair and its accuracy for short games is not the same as the accuracy for long games.
 
 The permutation test resulted in a p-value of 0.05 which is less than 0.05. This means that the value is significant and that the model is unfair. The model has a harder time predicting the outcome of longer games. In order to find out why, I decided to perform analysis on the short and long games. I made distributions for these games on whether they won or lost and distributed them over the total amount of gold, which is accumulated as a result of killing monsters among other things. This resulted in a clear difference in the distributions between long and short games. For games that go on longer, the distributions of total gold is closer than it is for short games. This makes sense because as the game goes on, the team that killed more monsters and accumulated their resources earlier on run out of ways to level up or upgrade their gear. This gives the team that did not have the advatange to start to close the gap between the two teams as they are given more time. This results in a definite winner being harder to predict based on resource gathering because of the fact that at a certain point, both teams will eventually be maximum level and have the best gear, meaning that the value of resources is decreased significantly and therefore matters less in the overall outcome of the game.
+
+<iframe
+  src="assets/gold_short.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+
+<iframe
+  src="assets/gold_long.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
 
 ## Conclusion
