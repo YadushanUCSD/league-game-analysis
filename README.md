@@ -39,10 +39,31 @@ The graph below shows the distribution of monster kills for teams that won.
 
 The graph below shows the distribution of monster kills for teams that lost.
 
+<iframe
+  src="assets/univariate_loss_only.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+
 When overlaying these graphs over one another we can see that teams that won did tend to have more monster kills on average than teams that lost.
+
+<iframe
+  src="assets/shared_distribution.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
 
 ### Bivariate Analysis:
 I graphed the percentage of teams that had more monster kills than the other by whether they won or lost. This graph shows that teams that had more monster kills definitely won more often than they lost. This seems to support the fact that monster kills have a positive relationship with win rates. 
+
+<iframe
+  src="assets/bivariate_monster.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
 
 ### Interesting Aggregates:
 When grouping by the result, we can find some very interesting aggregates. This shows that teams that won had more monster kills, more minion kills, more kills, more assists, more gold accumulated, and less deaths.
