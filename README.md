@@ -112,6 +112,13 @@ Significance Level: 5%
 
 To do this I used Logisitic Regression since this is a binary classification task. 
 
+<iframe
+  src="assets/hypothesis.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+
 According to the model, the resulting coefficient and intercept are: Coefficient: 0.009717630776798814 and Intercept: -1.8503285496480981
 
 This means the model predicts that for every additional monster kill, the likelihood of winning increases be roughyly 0.0097. 
