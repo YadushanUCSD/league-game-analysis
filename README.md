@@ -169,6 +169,8 @@ The permutation test resulted in a p-value of 0.05 which is less than 0.05. This
   frameborder="0"
 ></iframe>
 
+0 represents a loss and 1 refers to a win
+
 This resulted in a clear difference in the distributions between long and short games. For games that go on longer, the distributions of total gold is closer than it is for short games. This makes sense because as the game goes on, the team that killed more monsters and accumulated their resources earlier on run out of ways to level up or upgrade their gear. This gives the team that did not have the advatange to start to close the gap between the two teams as they are given more time. This results in a definite winner being harder to predict based on resource gathering because of the fact that at a certain point, both teams will eventually be maximum level and have the best gear, meaning that the value of resources is decreased significantly and therefore matters less in the overall outcome of the game.
 
 ## Conclusion
