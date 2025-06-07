@@ -99,6 +99,7 @@ When looking at the data it appears that soeme of the incomplete data have missi
 Other columns also experience some missing values. I first started by testing the missingness of double kills based on first bloods.
 
 Null Hypothesis: The missingness of the doublekills column is independent of the firstblood column
+
 Alternate Hypothesis: The missingness of the doublekills column depends on the firstblood column
 
 After performing a permuatation test, the resulting value is extremely small because of the observed difference being so much greater than the distribution. Because our p-value is less than 0.05, we can reject the null and determine that this is a significant result and that double kills being missing is dependent on first bloods.
