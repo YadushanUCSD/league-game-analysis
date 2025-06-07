@@ -27,13 +27,13 @@ The dataset contains a very extensive array of data to analyze, but for the purp
 ### Data Cleaning:
 The first step of the data cleaning process is to drop all of the data regarding individual players. For the purposes of this project is to analyze team performance, not individual. This data set has rows for players followed by rows of data from teams, so we will only keep this team data. Then, not all rows are complete and this is shown by the datacompleteness column which tells if the row is complete or not. All rows that are not complete are droppped. 
 
-| gameid | datacompleteness   |   url | league   |   year |
-|---:|:----------------------|:-------------------|------:|:---------|-------:|
-| 10 | ESPORTSTMNT01_2690210 | complete           |   nan | LCKC     |   2022 |
-| 11 | ESPORTSTMNT01_2690210 | complete           |   nan | LCKC     |   2022 |
-| 22 | ESPORTSTMNT01_2690219 | complete           |   nan | LCKC     |   2022 |
-| 23 | ESPORTSTMNT01_2690219 | complete           |   nan | LCKC     |   2022 |
-| 46 | ESPORTSTMNT01_2690227 | complete           |   nan | LCKC     |   2022 |
+| gameid | datacompleteness       | url      | league | year |
+|-------:|:----------------------|:---------|--------|------|
+| 10     | ESPORTSTMNT01_2690210 | complete | nan    | LCKC |
+| 11     | ESPORTSTMNT01_2690210 | complete | nan    | LCKC |
+| 22     | ESPORTSTMNT01_2690219 | complete | nan    | LCKC |
+| 23     | ESPORTSTMNT01_2690219 | complete | nan    | LCKC |
+| 46     | ESPORTSTMNT01_2690227 | complete | nan    | LCKC |
 
 ### Univariate Analysis:
 The graph below shows the distribution of monster kills for teams that won.
