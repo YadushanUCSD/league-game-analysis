@@ -137,7 +137,7 @@ To do this I used permutation test since the distribution of the sample is not c
 The resulting P-value is incredibly small (less than 0.000) because of the observed difference being so extreme. Therefore, we can reject the null hypothesis and say that more monster kills most likely do impact the chance of winning the game because the result is very significant.
 
 ## Framing a Prediction Problem
-Now that I know a correlation between monster kills and the result of the game is likely, I want to see if I can predict the result of the game based on this information. The variable I will be predicting is 'result'. I will use binary classification because I just need to determine if the outcome is a win or a loss.
+Now that I know a correlation between monster kills and the result of the game is likely, I want to see if I can predict the result of the game based on this information. The variable I will be predicting is 'result'. I will use binary classification because I just need to determine if the outcome is a win or a loss and a binary classifier is the most simple and effective way to do so.
 
 ## Baseline Model
 To do this I will employ machine learning techniques to train a model and see how well it can predict the outcome of games based on monster kills and gold accumulated. Gold accumulated is closely linked with monster kills because killing monsters rewards players with extra resources like gold. A standard scaler will be applied to the totalgold and monsterkills columns in order to transform them since they are both quantitative variables. The data will then be split into an 80/20 split with training and test in order to help mitigate overfitting.
