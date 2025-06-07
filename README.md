@@ -16,12 +16,19 @@ The central question this project is focused around is: do teams who kill more m
 The dataset contains a very extensive array of data to analyze, but for the purpose of this project, the one that we will focus on are as follows.
 
 'monsterkills': This column consists of the amount of monsters that were killed by each player and team
+
 'totalgold': This column includes the amount of gold that each player and team accumulated throughout the match
+
 'kills': This column includes the amount of kills on enemy players that each player and team accumulated throughout the match
+
 'minionkills': This column includes the amount of kills on enemy minions that each player and team accumulated throughout the match
+
 'deaths': This column includes the amount of deaths that each player and team accumulated throughout the match
+
 'assists': This column includes the amount of assists on enemy minions that each player and team accumulated throughout the match
+
 'goldspent': This column includes the amount of gold that each player and team spent throughout the match
+
 'gamelength': This column includes the length of the game's duration
 
 ## Data Cleaning and Exploratory Data Analysis:
@@ -106,6 +113,7 @@ After performing a permuatation test, the resulting value is extremely small bec
 I also check the missingness of bans based on the result column.
 
 Null Hypothesis: The distribution of result is independent of whether ban1 is missing
+
 Alternate Hypothesis: The distribution of result is different depending on whether ban1 is missing
 
 After performing a permutation test, the resulting p-value is 0.55. Since this value is greater than 0.5, we fail to reject the null hypothesis and determine that this result is not significant. This means that the missingness of bans likely does not depend on the result columns.
@@ -121,8 +129,11 @@ After performing a permutation test, the resulting p-value is 0.55. Since this v
 In this hypothesis test, I will determine if there is a significant difference for monster kills and winning games.
 
 Null: There is no association between the number of monster kills and the number of wins.
+
 Alternate: There is a positive association between the number of monster kills and the number of wins.
+
 Test Statistic: difference in means
+
 Significance Level: 5%
 
 To do this I used permutation test since the distribution of the sample is not completely known.
@@ -151,6 +162,7 @@ In order to improve the accuracy of the previous model, I decided to incorporate
 In order to test the fairness of my model, I decided to ask the question: does my model perform worse for short games (games that have a runtime less than 2000) that is does for long games (games that have a runtime greater than or equal to 2000)? To solve this I used a permutation test.
 
 Null hypothesis: My model is fair and its accuracy for short games is the same as the accuracy for long games.
+
 Alternative hypothesis: Our model is unfair and its accuracy for short games is not the same as the accuracy for long games.
 
 The permutation test resulted in a p-value of 0.05 which is less than 0.05. This means that the value is significant and that the model is unfair. The model has a harder time predicting the outcome of longer games. In order to find out why, I decided to perform analysis on the short and long games. I made distributions for these games on whether they won or lost and distributed them over the total amount of gold, which is accumulated as a result of killing monsters among other things. 
